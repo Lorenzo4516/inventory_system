@@ -4,9 +4,11 @@
 
 class match : public pickable {
 public:
-	string type = "match";
+	std::string type = "match";
 	int id;
-
+	char icon = '/';
+	int getid() const { return id; }
+	char geticon() const { return icon; }
 	void numeration() {
 		static int previous_id = 0;
 		id = previous_id++;
@@ -14,6 +16,7 @@ public:
 
 	match() {
 		numeration();
+		show_item[1] = geticon();
 	}
 
 };

@@ -4,15 +4,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
+
 
 class player {
 	
 public:
 
 	int id;
-	string name;
-	vector <unique_ptr<pickable>> inventory;
+	std::string name;
+	std::vector <std::unique_ptr<pickable>> inventory;
 
 
 	void numeration() {
@@ -23,8 +23,11 @@ public:
 	};
 	
 	player() {
-		cout << "player's name" << endl;
-		cin >> name;
+		/*
+		std::cout << "player's name" << std::endl;
+		std::cin >> name;		//to be removed*/
+		name = "p1";
+		
 		inventory.resize(10);
 		numeration();
 	}

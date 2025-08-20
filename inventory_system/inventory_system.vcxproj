@@ -127,19 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="inventory_system.cpp">
+    <ClCompile Include="main.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdcpp20</LanguageStandard>
     </ClCompile>
-    <ClCompile Include="player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cut_ code.h" />
+    <ClInclude Include="inputs.h" />
     <ClInclude Include="player_inventory.h" />
     <ClInclude Include="match.h" />
     <ClInclude Include="pickable.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="torch.h" />
-    <ClInclude Include="vectors.h" />
+    <ClInclude Include="ui.h" />
+    <ClInclude Include="variables.h" />
     <ClInclude Include="void.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

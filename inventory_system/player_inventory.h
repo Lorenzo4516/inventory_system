@@ -11,7 +11,7 @@
 
 class player_inventory : public player { 
 
-	vector <unique_ptr<pickable>> inventory;
+	std::vector <unique_ptr<pickable>> inventory;
 	 
 	player_inventory() {
 		inventory.resize(10);
